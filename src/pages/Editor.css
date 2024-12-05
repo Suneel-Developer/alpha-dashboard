@@ -1,0 +1,114 @@
+/* Editor.css */
+.editor-container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.ql-toolbar.ql-snow {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+/* Editor.css */
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+.ql-editor {
+    font-family: 'Times New Roman', 'Roboto', 'Monospace', sans-serif;
+    font-size: 1.125rem !important;
+   }
+
+   
+ 
+
+
+
+.custom-font{
+    font-family: 'Times New Roman', Times, serif !important;
+    
+   }
+
+.ql-font-Jakarta {
+    font-family: 'Plus Jakarta Sans', sans-serif !important;
+  }
+
+.ql-font-Monospace {
+    
+    font-family: monospace !important;
+  }
+
+
+.ql-font-times-new-roman {
+    font-family: 'Times New Roman', sans-serif !important;
+  }
+.ql-font-Jakarta {
+    font-family: 'Roboto', sans-serif !important;
+  }
+
+  .ql-font-times-new-roman{
+    font-family: 'Times New Roman', Times, serif
+
+  }
+.ql-formats {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.ql-toolbar.ql-snow  {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.ql-toolbar.ql-snow .ql-formats>* {
+    flex: 1;
+    margin: 2px;
+    /* Reduced margin to save space */
+    min-width: 30px;
+    /* Ensure each button has a minimum width */
+}
+
+.ql-toolbar.ql-snow .ql-picker {
+    margin: 0;
+    /* Remove extra margin from pickers */
+}
+
+.ql-toolbar.ql-snow .ql-picker-options {
+    max-height: 150px;
+    /* Limit dropdown height */
+    overflow-y: auto;
+    /* Enable scrolling in dropdown */
+}
+
+.ql-toolbar.ql-snow .ql-picker.ql-expanded .ql-picker-options {
+    overflow-y: auto;
+}
+
+/* Adjust icon sizes */
+.ql-snow .ql-stroke {
+    stroke-width: 2;
+}
+
+.ql-snow .ql-fill,
+.ql-snow .ql-stroke.ql-fill {
+    fill: #444;
+}
+
+.ql-snow .ql-picker-label {
+    padding: 2px 5px;
+    /* Reduced padding */
+}
+
+/* Dropdown or responsive hamburger menu for small screens */
+@media (max-width: 768px) {
+    .ql-toolbar.ql-snow {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        /* overflow-x: auto; */
+        /* Enable scrolling for small screens */
+    }
+
+    .ql-toolbar.ql-snow .ql-formats {
+        justify-content: flex-start;
+    }
+}

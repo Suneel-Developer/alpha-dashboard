@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.boxscrollbar::-webkit-scrollbar {
+  width: 4px;
+  border-radius: 60px;
+  overflow: hidden;
+}
+
+.boxscrollbar::-webkit-scrollbar-track {
+  background: #DDE6F2;
+}
+
+.boxscrollbar::-webkit-scrollbar-thumb {
+  background: #1E55A8;
+  border-radius: 10px;
+}
+
+.boxscrollbar2::-webkit-scrollbar {
+  width: 0px;
+}
+
+.boxscrollbar2::-webkit-scrollbar-track {
+  width: 0px;
+}
+
+.ql-container {
+  border: none;
+  box-shadow: none;
+}
+
+/* Style the top bar */
+.ql-toolbar {
+  background-color: #E1E5EB;
+  padding: 10px 20px;
+  /* height: 64px; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ql-editor {
+  padding: 10px;
+}
+
+.ql-container.ql-snow {
+  border: none;
+}
+
+.ql-container.ql-snow {
+  border: none;
+}
+
+
+
+
+
+/* checkbox settings 👇 */
+
+.ui-checkbox {
+  --primary-color: #1E55A8;
+  --secondary-color: #fff;
+  --primary-hover-color: #1E55A8;
+  /* checkbox */
+  --checkbox-diameter: 20px;
+  --checkbox-border-radius: 5px;
+  --checkbox-border-color: #D0D5DD;
+  --checkbox-border-width: 1px;
+  --checkbox-border-style: solid;
+  background-color: transparent;
+  background: transparent;
+  /* checkmark */
+  --checkmark-size: 1.2;
+}
+
+
+
+.ui-checkbox {
+  width: 20px;
+  height: 20px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: var(--checkbox-diameter);
+  height: var(--checkbox-diameter);
+  border-radius: var(--checkbox-border-radius);
+  background: var(--secondary-color);
+  border: var(--checkbox-border-width) var(--checkbox-border-style) var(--checkbox-border-color);
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  background-color: transparent;
+  background: transparent;
+  cursor: pointer;
+  position: relative;
+}
+
+.ui-checkbox::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: inherit;
+  background-color: transparent;
+  background: transparent;
+  opacity: 0;
+}
+
+.ui-checkbox::before {
+  top: 43%;
+  left: 48%;
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 8px;
+  border-radius: 1px;
+  background-color: transparent;
+  border-right: 2px solid #1E55A8;
+  border-bottom: 2px solid #1E55A8;
+  opacity: 0;
+}
+
+/* actions */
+
+
+
+.ui-checkbox:checked {
+  background: var(--primary-color);
+  border-color: #1E55A8;
+  background-color: transparent;
+}
+
+.ui-checkbox:checked::before {
+  opacity: 1;
+  transform: translate(-50%, -50%) rotate(45deg) scale(var(--checkmark-size));
+  transition: all 0.2s cubic-bezier(0.12, 0.4, 0.29, 1.46) 0.1s;
+}
+
+
+
+
+.ql-snow .ql-picker.ql-font .ql-picker-label[data-value='times-new-roman']::before,
+    .ql-snow .ql-picker.ql-font .ql-picker-item[data-value='times-new-roman']::before
+    {
+      content: 'Times New Roman';
+      font-family: 'Times New Roman';
+    }
+
+    .ql-snow .ql-picker.ql-font .ql-picker-label[data-value='times-new-roman'],
+    .ql-snow .ql-picker.ql-font .ql-picker-item[data-value='times-new-roman']{
+word-wrap: none;
+white-space: nowrap;
+    }
+
+
+.ql-snow .ql-picker.ql-font .ql-picker-label[data-value='Roboto']::before,
+    .ql-snow .ql-picker.ql-font .ql-picker-item[data-value='Roboto']::before
+    {
+      content: 'Roboto';
+      font-family: 'Roboto';
+    }
+
+    .ql-snow .ql-picker.ql-font .ql-picker-label[data-value='Roboto'],
+    .ql-snow .ql-picker.ql-font .ql-picker-item[data-value='Roboto']{
+word-wrap: none;
+white-space: nowrap;
+    }
+.ql-snow .ql-picker.ql-font .ql-picker-label[data-value='Monospace']::before,
+    .ql-snow .ql-picker.ql-font .ql-picker-item[data-value='Monospace']::before
+    {
+      content: 'Monospace';
+      font-family: 'Monospace';
+    }
+
+    .ql-snow .ql-picker.ql-font .ql-picker-label[data-value='Monospace'],
+    .ql-snow .ql-picker.ql-font .ql-picker-item[data-value='Monospace']{
+word-wrap: none;
+white-space: nowrap;
+    }
+
+
+.ql-container {
+  position: relative !important;
+}
+
+.ql-editor {
+  min-height: 200px !important; /* Adjust as needed */
+}
+/* Ensure the dropdown appears above other elements */
+.ql-picker {
+  z-index: 9999 !important;
+}
+
+.ql-snow .ql-picker.ql-font {
+  width: 137px !important;
+
+}
